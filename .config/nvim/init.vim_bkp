@@ -1,0 +1,41 @@
+let mapleader = ' '
+
+inoremap <Down> <nop>
+inoremap <Left> <nop>
+inoremap <Right> <nop>
+inoremap <Up> <nop>
+inoremap <silent> <down> <nop>
+inoremap <silent> <left> <nop>
+inoremap <silent> <right> <nop>
+inoremap <silent> <up> <nop>
+noremap <Down> <nop>
+noremap <Left> <nop>
+noremap <Right> <nop>
+noremap <Up> <nop>
+noremap <silent> <down> <nop>
+noremap <silent> <left> <nop>
+noremap <silent> <right> <nop>
+noremap <silent> <up> <nop>
+
+inoremap <silent> jk <esc>
+inoremap jk <esc>
+tnoremap <silent> <esc> <c-\><c-n>
+tnoremap <silent> jk <c-\><c-n>
+
+nmap <leader>c "+y
+vmap <leader>c "+y
+nmap <leader>r :update<cr>:source %<cr>
+nmap <leader>w :write<cr>
+nmap <leader>x ma0ci[x<esc>`a
+
+set ignorecase
+set mouse=
+set nowrap
+set number
+set relativenumber
+set shiftwidth=4
+set signcolumn=yes
+set smartcase
+set tabstop=4
+set updatetime=1000
+set winborder=rounded
