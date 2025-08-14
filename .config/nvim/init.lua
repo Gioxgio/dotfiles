@@ -33,11 +33,11 @@ vim.keymap.set('i', 'jk', '<esc>', { silent = true })
 vim.keymap.set('t', 'jk', '<c-\\><c-n>', { silent = true })
 vim.keymap.set('t', '<esc>', '<c-\\><c-n>', { silent = true })
 
-vim.keymap.set({ 'n', 'v' }, '<leader>c', '"+y')
-vim.keymap.set('n', '<leader>r', ':update<cr> :source<cr>')
-vim.keymap.set('n', '<leader>w', ':write<cr>')
-
-vim.keymap.set('n', '<leader>x', 'ma0ci[x<esc>`a') -- Useful to tick [ ]
+vim.keymap.set({ 'n', 'v' }, '<leader>c', '"+y', { silent = true })
+vim.keymap.set('n', '<leader>r', ':update<cr> :source<cr>', { silent = true })
+vim.keymap.set('n', '<leader>w', ':write<cr>', { silent = true })
+vim.keymap.set('n', '<leader>x',
+	'ma:s/\\v(\\[x]|\\[ ])/\\=submatch(1)==\'[x]\'?\'[ ]\':\'[x]\'/e<cr>:nohlsearch<esc>`a', { silent = true }) -- Useful to tick [ ]
 
 
 require('lsp_config')
