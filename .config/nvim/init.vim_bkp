@@ -19,8 +19,11 @@ nmap <silent><leader>r :update<cr>:source %<cr>
 nmap <silent><leader>w :write<cr>
 nmap <silent><leader>x ma:s/\v(\[x]\|\[ ])/\=submatch(1)=='[x]'?'[ ]':'[x]'/e<cr>:nohlsearch<esc>`a
 
+set foldlevel=99
+set foldmethod=indent
 set ignorecase
-set mouse
+set mouse=
+set nofoldenable
 set nowrap
 set number
 set relativenumber

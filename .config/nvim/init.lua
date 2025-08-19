@@ -6,8 +6,8 @@ end
 vim.g.mapleader = ' '
 
 vim.o.mouse = ''
-vim.o.winborder = 'rounded'
 vim.o.updatetime = 1000
+vim.o.winborder = 'rounded'
 vim.o.wrap = false
 
 vim.o.number = true
@@ -23,6 +23,9 @@ vim.o.smartcase = true
 vim.o.undofile = true
 vim.o.undodir = undo_dir
 
+vim.o.foldenable = false
+vim.o.foldlevel = 99
+vim.o.foldmethod = "indent"
 
 vim.keymap.set({ 'i', 'n' }, '<up>', '<nop>', { silent = true })
 vim.keymap.set({ 'i', 'n' }, '<down>', '<nop>', { silent = true })
