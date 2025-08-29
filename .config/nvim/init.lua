@@ -25,7 +25,7 @@ vim.o.undodir = undo_dir
 
 vim.o.foldenable = false
 vim.o.foldlevel = 99
-vim.o.foldmethod = "indent"
+vim.o.foldmethod = 'indent'
 
 vim.keymap.set({ 'i', 'n' }, '<up>', '<nop>', { silent = true })
 vim.keymap.set({ 'i', 'n' }, '<down>', '<nop>', { silent = true })
@@ -33,8 +33,6 @@ vim.keymap.set({ 'i', 'n' }, '<left>', '<nop>', { silent = true })
 vim.keymap.set({ 'i', 'n' }, '<right>', '<nop>', { silent = true })
 
 vim.keymap.set('i', 'jk', '<esc>', { silent = true })
-vim.keymap.set('t', 'jk', '<c-\\><c-n>', { silent = true })
-vim.keymap.set('t', '<esc>', '<c-\\><c-n>', { silent = true })
 
 vim.keymap.set({ 'n', 'v' }, '<leader>c', '"+y', { silent = true })
 vim.keymap.set('n', '<leader>r', ':update<cr> :source<cr>', { silent = true })
@@ -43,4 +41,5 @@ vim.keymap.set('n', '<leader>x',
 	'ma:s/\\v(\\[x]|\\[ ])/\\=submatch(1)==\'[x]\'?\'[ ]\':\'[x]\'/e<cr>:nohlsearch<esc>`a', { silent = true }) -- Useful to tick [ ]
 
 
+require('terminal')
 require('lsp_config')
