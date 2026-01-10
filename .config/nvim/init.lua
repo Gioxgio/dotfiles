@@ -6,9 +6,9 @@ end
 vim.g.mapleader = ' '
 
 vim.o.mouse = ''
+vim.opt.belloff = 'all'
 vim.o.updatetime = 1000
 vim.o.winborder = 'rounded'
-vim.o.wrap = false
 
 vim.o.number = true
 vim.o.relativenumber = true
