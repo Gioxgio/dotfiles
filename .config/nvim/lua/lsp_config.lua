@@ -3,6 +3,7 @@ vim.lsp.enable('html_ls')
 vim.lsp.enable('js_ls')
 vim.lsp.enable('json_ls')
 vim.lsp.enable('lua_ls')
+vim.lsp.enable('python_ls')
 
 vim.lsp.config('lua_ls', {
 	settings = {
