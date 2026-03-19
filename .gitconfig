@@ -1,3 +1,6 @@
+[alias]
+	df = diff
+	dt = difftool
 [core]
 	editor = nvim -f
 [credential "https://github.com"]
@@ -8,5 +11,7 @@
 	helper = !/usr/bin/gh auth git-credential
 [diff]
     tool = nvimdiff
+[difftool]
+	prompt = false
 [difftool "nvimdiff"]
     cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
