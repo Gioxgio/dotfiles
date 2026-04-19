@@ -51,4 +51,4 @@ end
 
 vim.keymap.set('t', 'jk', '<c-\\><c-n>', { silent = true })
 vim.keymap.set('t', '<esc>', '<c-\\><c-n>', { silent = true })
-vim.keymap.set({ 'n', 't' }, '<leader>t', toggle_terminal)
+vim.keymap.set({ 'n' }, '<leader>t', toggle_terminal)
