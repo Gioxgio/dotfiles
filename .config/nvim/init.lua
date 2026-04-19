@@ -53,4 +53,5 @@ vim.keymap.set('n', '<leader>x',
 
 
 require('terminal')
+require('plugin')
 require('lsp_config')

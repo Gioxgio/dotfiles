@@ -1,9 +1,9 @@
-vim.lsp.enable('c_ls')
-vim.lsp.enable('html_ls')
-vim.lsp.enable('js_ls')
-vim.lsp.enable('json_ls')
+vim.lsp.enable('clangd')
+vim.lsp.enable('html')
+vim.lsp.enable('jsonls')
 vim.lsp.enable('lua_ls')
-vim.lsp.enable('python_ls')
+vim.lsp.enable('pylsp')
+vim.lsp.enable('vtsls')
 
 vim.lsp.config('lua_ls', {
 	settings = {
