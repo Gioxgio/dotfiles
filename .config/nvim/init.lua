@@ -7,19 +7,25 @@ vim.g.mapleader = ' '
 
 vim.o.mouse = ''
 vim.opt.belloff = 'all'
-vim.o.updatetime = 1000
+vim.o.updatetime = 250
+vim.o.timeoutlen = 300
 vim.o.winborder = 'rounded'
 
 vim.o.number = true
 vim.o.relativenumber = true
+vim.o.scrolloff = 10
 vim.o.signcolumn = 'yes'
 
+vim.o.list = true
+vim.opt.listchars = { tab = '  ', trail = '·', nbsp = '␣' }
 vim.o.shiftwidth = 4
 vim.o.tabstop = 4
 
 vim.o.ignorecase = true
+vim.o.inccommand = 'split'
 vim.o.smartcase = true
 
+vim.o.confirm = true
 vim.o.undofile = true
 vim.o.undodir = undo_dir
 
@@ -31,6 +37,11 @@ vim.keymap.set({ 'i', 'n' }, '<up>', '<nop>', { silent = true })
 vim.keymap.set({ 'i', 'n' }, '<down>', '<nop>', { silent = true })
 vim.keymap.set({ 'i', 'n' }, '<left>', '<nop>', { silent = true })
 vim.keymap.set({ 'i', 'n' }, '<right>', '<nop>', { silent = true })
+
+vim.keymap.set('n', '<C-h>', '<C-w><C-h>', { silent = true })
+vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { silent = true })
+vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { silent = true })
+vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { silent = true })
 
 vim.keymap.set('i', 'jk', '<esc>', { silent = true })
 
