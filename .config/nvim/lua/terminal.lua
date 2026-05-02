@@ -44,9 +44,8 @@ local toggle_terminal = function()
 
 	if vim.bo[state.floating.buf].buftype ~= 'terminal' then
 		vim.cmd('terminal')
+		vim.cmd('startinsert')
 	end
-
-	vim.cmd('startinsert')
 end
 
 vim.keymap.set('t', 'jk', '<c-\\><c-n>', { silent = true })
